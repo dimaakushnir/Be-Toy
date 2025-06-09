@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://pay.fondy.eu/latest/checkout.css">
+    <title>Be-Toy</title>
+</head>
+
+<body>
+    <svg display="none">
+    <symbol id="arrow-link" viewBox="0 0 16 15">
+        <g>
+            <path d="M13 0H15.6096V15.0053H13V0Z" />
+            <path d="M0 2.60986V0.000239611H15.0053V2.60986H0Z" />
+            <path d="M2.20801 14.4146L0.451516 12.4846L13.9435 0.205486L15.7 2.13548L2.20801 14.4146Z" />
+        </g>
+    </symbol>
+    <symbol id="arrow" viewBox="0 0 14 22">
+        <g>
+            <path d="M2.96038 21.2096L1.05536 19.4261L11.3107 8.47217L13.2157 10.2557L2.96038 21.2096Z" />
+            <path d="M13.2157 10.2557L11.4324 12.1604L0.478516 1.90502L2.26206 0L13.2157 10.2557Z" />
+        </g>
+    </symbol>
+</svg>
+    <div class="wrapper">
+        <header class="header">
+    <div class="header__main">
+        <div class="header__container container">
+            <div class="header__content">
+                <a href="index.html" class="header__logo">
+                    <img src="img/logo.svg" alt="logo">
+                </a>
+                <nav class="header__menu menu-header">
+                    <ul class="menu-header__list">
+                        <li class="menu-header__item">
+                            <a href="" class="menu-header__link link-scroll" data-scroll="how-work">Як замовити</a>
+                        </li>
+                        <li class="menu-header__item">
+                            <a href="" class="menu-header__link link-scroll" data-scroll="works">Галерея іграшок</a>
+                        </li>
+                        <li class="menu-header__item">
+                            <a href="" class="menu-header__link link-scroll" data-scroll="reviews">Відгуки</a>
+                        </li>
+                        <li class="menu-header__item">
+                            <a href="" class="menu-header__link link-scroll" data-scroll="footer">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__languages languages-header">
+                    <div class="languages-header__dropdown dropdown">
+                        <button class="dropdown__btn">
+                            <span class="dropdown__btn-text">
+                                UA
+                            </span>
+                            <span class="dropdown__btn-arrow">
+                                <svg>
+                                    <use xlink:href="#arrow"></use>
+                                </svg>
+                            </span>
+                        </button>
+                        <ul class="dropdown__list">
+                            <li class="dropdown__item" data-dropdown="EN">
+                                <a href="index_eu.html">EN</a>
+                            </li>
+                            <li class="dropdown__item" data-dropdown="RU">
+                                <a href="index_ru.html">RU</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <button class="header__burger">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+    <div class="header__mobile mobile-header">
+        <div class="mobile-header__container container">
+            <div class="mobile-header__body">
+                <div class="mobile-header__inner"></div>
+            </div>
+        </div>
+    </div>
+</header>
+        <main>
+            <section class="hero">
+                <span class="hero__ellipse"></span>
+                <div class="hero__container container">
+                    <div class="hero__body">
+                        <div class="hero__top">
+                            <div class="hero__title-block">
+                                <h1 class="hero__title">
+                                    Перетвори себе на<br> <span class="color">унікальну</span> <span class="hero__img"
+                                        data-da="hero__body, 0, 700"><img src="img/hero/toy.png" alt="toy"></span>
+                                    іграшку
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="hero__advantages advantages-hero">
+                            <div class="advantages-hero__column">
+                                <div class="advantages-hero__item advantages-hero__item_first">
+                                    <span class="advantages-hero__icon">
+                                        <img src="img/hero/hashtag.svg" alt="hashtag">
+                                    </span>
+                                    <div class="advantages-hero__text">
+                                        Ідеальний подарунок, спогад чи<br> стильний сувенір на замовлення
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="advantages-hero__column">
+                                <div class="advantages-hero__item advantages-hero__item_second">
+                                    <span class="advantages-hero__icon">
+                                        <img src="img/hero/hashtag.svg" alt="hashtag">
+                                    </span>
+                                    <div class="advantages-hero__text">
+                                        Доставляємо по<br> всьому світу
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero__bottom">
+                            <a href="" class="hero__btn btn link-scroll" data-scroll="create">замовити іграшку</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="how-work" id="how-work">
+                <span class="how-work__ellipse how-work__ellipse_1"></span>
+                <span class="how-work__ellipse how-work__ellipse_2"></span>
+                <div class="how-work__container container">
+                    <div class="how-work__image">
+                        <img src="img/how-work/puzzle.png" alt="puzzle">
+                    </div>
+                    <div class="how-work__body">
+                        <h2 class="how-work__title">Як це працює?</h2>
+                        <div class="how-work__subtitle">4 прості кроки - і вона твоя!</div>
+                        <div class="how-work__row">
+                            <div class="how-work__column">
+                                <div class="how-work__item item-how-work">
+                                    <div class="item-how-work__text">Завантаж фото.</div>
+                                    <div class="item-how-work__number">
+                                        <img src="img/how-work/01.svg" alt="01">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="how-work__column">
+                                <div class="how-work__item item-how-work">
+                                    <div class="item-how-work__text">Подивися перегляд іграшки.</div>
+                                    <div class="item-how-work__number">
+                                        <img src="img/how-work/02.svg" alt="02">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="how-work__column">
+                                <div class="how-work__item item-how-work">
+                                    <div class="item-how-work__text">Обери розмір, вкажи свої дані.</div>
+                                    <div class="item-how-work__number">
+                                        <img src="img/how-work/03.svg" alt="03">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="how-work__column">
+                                <div class="how-work__item item-how-work">
+                                    <div class="item-how-work__text">Оплати і чекай на іграшку.</div>
+                                    <div class="item-how-work__number">
+                                        <img src="img/how-work/04.svg" alt="04">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="how-look" id="how-look">
+                <span class="how-look__ellipse"></span>
+                <div class="how-look__container container">
+                    <div class="how-look__top top-how-look">
+                        <div class="top-how-look__image" data-da="top-how-look__title-block, 0, 700">
+                            <img src="img/how-look/phone.png" alt="phone">
+                        </div>
+                        <div class="top-how-look__content">
+                            <div class="top-how-look__title-block">
+                                <h2 class="top-how-look__title">
+                                    Так це виглядає насправді
+                                </h2>
+                            </div>
+                            <div class="top-how-look__subtitle">
+                                Від звичайного фото до унікальної<br> фігурки - гортай і надихайся
+                                <span class="arrow">
+                                    <svg>
+                                        <path
+                                            d="M7.29289 13.5315C7.68342 13.922 8.31658 13.922 8.70711 13.5315L15.0711 7.16752C15.4616 6.77699 15.4616 6.14383 15.0711 5.75331C14.6805 5.36278 14.0474 5.36278 13.6569 5.75331L8 11.4102L2.34315 5.75331C1.95262 5.36278 1.31946 5.36278 0.928932 5.75331C0.538408 6.14383 0.538408 6.77699 0.928932 7.16752L7.29289 13.5315ZM8 0L7 0L7 12.8244H8H9L9 0L8 0Z" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="how-look__body">
+                        <div class="how-look__slider slider-how-look">
+                            <div class="slider-how-look__swiper swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="slider-how-look__item">
+                                            <div class="slider-how-look__image">
+                                                <img src="img/how-look/01.jpg" alt="how-look-img">
+                                            </div>
+                                            <div class="slider-how-look__image">
+                                                <img src="img/how-look/02.jpg" alt="how-look-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-how-look__item">
+                                            <div class="slider-how-look__image">
+                                                <img src="img/how-look/03.jpg" alt="how-look-img">
+                                            </div>
+                                            <div class="slider-how-look__image">
+                                                <img src="img/how-look/04.jpg" alt="how-look-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-how-look__item">
+                                            <div class="slider-how-look__image">
+                                                <img src="img/how-look/05.jpg" alt="how-look-img">
+                                            </div>
+                                            <div class="slider-how-look__image">
+                                                <img src="img/how-look/04.jpg" alt="how-look-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-how-look__item">
+                                            <div class="slider-how-look__image">
+                                                <img src="img/how-look/01.jpg" alt="how-look-img">
+                                            </div>
+                                            <div class="slider-how-look__image">
+                                                <img src="img/how-look/02.jpg" alt="how-look-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-how-look__item">
+                                            <div class="slider-how-look__image">
+                                                <img src="img/how-look/03.jpg" alt="how-look-img">
+                                            </div>
+                                            <div class="slider-how-look__image">
+                                                <img src="img/how-look/04.jpg" alt="how-look-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-how-look__item">
+                                            <div class="slider-how-look__image">
+                                                <img src="img/how-look/05.jpg" alt="how-look-img">
+                                            </div>
+                                            <div class="slider-how-look__image">
+                                                <img src="img/how-look/04.jpg" alt="how-look-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-how-look__navigation navigation">
+                                <a href="" class="how-look__btn btn link-scroll" data-scroll="create">Хочу таку ж</a>
+                                <div class="navigation__btns">
+                                    <button class="navigation__btn navigation__btn_prev slider-how-look__btn_prev">
+                                        <svg>
+                                            <use xlink:href="#arrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button class="navigation__btn navigation__btn_next slider-how-look__btn_next">
+                                        <svg>
+                                            <use xlink:href="#arrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="create" id="create">
+                <span class="create__ellipse"></span>
+                <div class="create__container container">
+                    <div class="create__body">
+                        <div class="create__block create__block_upload create__upload upload-create active">
+                            <div class="upload-create__top">
+                                <h2 class="create__title upload-create__title">
+                                    Готові створити свою?
+                                </h2>
+                                <div class="create__subtitle upload-create__subtitle">
+                                    Від звичайного фото до унікальної<br> фігурки - гортай і надихайся
+                                    <span class="arrow">
+                                        <svg>
+                                            <path
+                                                d="M7.29289 13.5315C7.68342 13.922 8.31658 13.922 8.70711 13.5315L15.0711 7.16752C15.4616 6.77699 15.4616 6.14383 15.0711 5.75331C14.6805 5.36278 14.0474 5.36278 13.6569 5.75331L8 11.4102L2.34315 5.75331C1.95262 5.36278 1.31946 5.36278 0.928932 5.75331C0.538408 6.14383 0.538408 6.77699 0.928932 7.16752L7.29289 13.5315ZM8 0L7 0L7 12.8244H8H9L9 0L8 0Z" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="upload-create__body">
+                                <form action="#" class="upload-create__form form-upload-create">
+                                    <div class="form-upload-create__body">
+                                        <div class="form-upload-create__item form-upload-create__item_other">
+                                            <input id="formUploadFile2" accept=".jpg, .png, .gif" type='file'
+                                                name='image' class='form-upload-create__file-input'>
+                                            <button class="form-upload-create__file-button file-buttom">
+                                                <span class="file-buttom__icon">
+                                                    <img src="img/create/upload-icon.svg" alt="upload-icon">
+                                                </span>
+                                                <span class="file-buttom__text">Upload other photo</span>
+                                            </button>
+                                            <div class="form-upload-create__file-preview last-img-preview">
+                                            </div>
+                                        </div>
+                                        <div class="form-upload-create__item form-upload-create__item_main active">
+                                            <input id="formUploadFile1" accept=".jpg, .png, .gif" type='file'
+                                                name='image' class='form-upload-create__file-input'>
+                                            <button class="form-upload-create__file-button file-buttom">
+                                                <span class="file-buttom__icon">
+                                                    <img src="img/create/upload-icon.svg" alt="upload-icon">
+                                                </span>
+                                                <span class="file-buttom__text">Upload your photo</span>
+                                            </button>
+                                            <div class="form-upload-create__file-preview first-img-preview">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-upload-create__bottom">
+                                        <button type='sybmit' class='form-upload-create__btn btn'>створити</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="create__block create__block_loading create__loading loading-create">
+                            <div class="loading-create__body">
+                                <div class="loading-create__image">
+                                    <img src="img/create/girl.png" alt="girl-img">
+                                </div>
+                                <div class="loading-create__content">
+                                    <h2 class="create__title loading-create__title">
+                                        Ваша іграшка в процесі ...
+                                    </h2>
+                                    <div class="create__subtitle loading-create__subtitle">
+                                        Наші алгоритми вже працюють над створенням вашого унікального персонажа.
+                                        Залишайтеся з нами!
+                                    </div>
+                                    <div class="loading-create__loading-bar loading-bar">
+                                        <div class="loading-bar__inner">
+                                            <span class="loading-bar__line"></span>
+                                            <span class="loading-bar__procent">0%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="create__block create__block_order create__order order-create">
+                            <div class="order-create__top">
+                                <h2 class="create__title order-create__title">Готово!</h2>
+                                <div class="create__subtitle order-create__subtitle">
+                                    Перевірте результат
+                                    <span class="arrow">
+                                        <svg>
+                                            <path
+                                                d="M7.29289 13.5315C7.68342 13.922 8.31658 13.922 8.70711 13.5315L15.0711 7.16752C15.4616 6.77699 15.4616 6.14383 15.0711 5.75331C14.6805 5.36278 14.0474 5.36278 13.6569 5.75331L8 11.4102L2.34315 5.75331C1.95262 5.36278 1.31946 5.36278 0.928932 5.75331C0.538408 6.14383 0.538408 6.77699 0.928932 7.16752L7.29289 13.5315ZM8 0L7 0L7 12.8244H8H9L9 0L8 0Z" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="order-create__body">
+                                <form action="#" class="order-create__form form-order-create">
+                                    <div class="form-order-create__row">
+                                        <div class="form-order-create__images images-order">
+                                            <div class="images-order__column images-order__column_main">
+                                                <div class="images-order__img images-order__img_main">
+                                                    <div class="front-img">
+                                                        <img src="img/how-look/04.jpg" alt="img">
+                                                    </div>
+                                                    <div class="images-order__img-icons">
+                                                        <a href="img/how-look/04.jpg" download
+                                                            class="images-order__img-download">
+                                                            <img src="img/icons/download.svg" alt="download-icon">
+                                                        </a>
+                                                        <a href="img/how-look/04.jpg" data-fancybox="toy"
+                                                            class='images-order__img-fullscreen'>
+                                                            <img src="img/icons/fullscreen.svg" alt="fullscreen-icon">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="images-order__column">
+                                                <div class="images-order__img images-order__img_big">
+                                                    <div class="back-img">
+                                                        <img src="img/how-look/06.jpg" alt="img">
+                                                    </div>
+                                                </div>
+                                                <div class="images-order__img images-order__img">
+                                                    <div class="first-img">
+                                                        <img src="img/how-look/03.jpg" alt="img">
+                                                    </div>
+                                                </div>
+                                                <div class="images-order__img images-order__img images-order__img_file">
+                                                    <div
+                                                        class="form-upload-create__item form-upload-create__item_order active">
+                                                        <input id="formUploadFileOrder" accept=".jpg, .png, .gif"
+                                                            type='file' name='image'
+                                                            class='form-upload-create__file-input'>
+                                                        <button class="form-upload-create__file-button file-buttom">
+                                                            <span class="file-buttom__icon">
+                                                                <img src="img/icons/plus.svg" alt="plus-icon">
+                                                            </span>
+                                                            <span class="file-buttom__text">Upload other photo</span>
+                                                        </button>
+                                                        <div id="formUploadFilePreview"
+                                                            class="form-upload-create__file-preview last-img">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-order-create__content">
+                                            <div class="form-order-create__items">
+                                                <div class="form-order-create__item form-order-create__item_size">
+                                                    <div class="form-order-create__label">* розмір</div>
+                                                    <div class="form-order-create__options options">
+                                                        <div class="options__item">
+                                                            <input id="formSizeS" autocomplete='off' type='radio'
+                                                                value="759" name='amount' class='options__input'>
+                                                            <label for="formSizeS" class="options__label">
+                                                                <span class="size">S</span>
+                                                                <span class="price">759 ГРН</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="options__item">
+                                                            <input id="formSizeM" autocomplete='off' type='radio'
+                                                                value="1469" name='amount' class='options__input'>
+                                                            <label for="formSizeM" class="options__label">
+                                                                <span class="size">M</span>
+                                                                <span class="price">1469 ГРН</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="options__item">
+                                                            <input id="formSizeL" checked autocomplete='off'
+                                                                type='radio' value="1749" name='amount'
+                                                                class='options__input'>
+                                                            <label for="formSizeL" class="options__label">
+                                                                <span class="size">L</span>
+                                                                <span class="price">1749 ГРН</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-order-create__item form-order-create__item_data">
+                                                    <div class="form-order-create__label">* ваші дані</div>
+                                                    <div class="form-order-create__inputs inputs">
+                                                        <div class="inputs__column">
+                                                            <input placeholder="Name" autocomplete='off' type='text'
+                                                                name='name' class='input'>
+                                                        </div>
+                                                        <div class="inputs__column">
+                                                            <input placeholder="Address" autocomplete='off' type='text'
+                                                                name='address' class='input'>
+                                                        </div>
+                                                        <div class="inputs__column">
+                                                            <input placeholder="Email" autocomplete='off' type='email'
+                                                                name='email' class='input'>
+                                                        </div>
+                                                        <div class="inputs__column">
+                                                            <input placeholder="Phone" autocomplete='off' type='phone'
+                                                                name='phone' class='input'>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-order-create__item form-order-create__item_payment">
+                                                    <div class="form-order-create__label">* спосіб оплати</div>
+                                                    <div class="form-order-create__options options">
+                                                        <div class="options__item">
+                                                            <input id="formPayApple" autocomplete='off' type='radio'
+                                                                value="Apple" name='payment' class='options__input'>
+                                                            <label for="formPayApple" class="options__label">
+                                                                <span class="icon">
+                                                                    <img src="img/icons/apple.svg" alt="apple-pay">
+                                                                </span>
+                                                                <span class="text">Pay</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="options__item">
+                                                            <input id="formPayGoogle" autocomplete='off' type='radio'
+                                                                value="Google" name='payment' class='options__input'>
+                                                            <label for="formPayGoogle" class="options__label">
+                                                                <span class="icon">
+                                                                    <img src="img/icons/google.svg" alt="google-pay">
+                                                                </span>
+                                                                <span class="text">Pay</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="options__item">
+                                                            <input id="formPayCard" autocomplete='off' type='radio'
+                                                                value="Card" name='payment' class='options__input'>
+                                                            <label for="formPayCard" class="options__label">
+                                                                <span class="icon">
+                                                                    <img src="img/icons/card.svg" alt="card-pay">
+                                                                </span>
+                                                                <span class="text">Card</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-order-create__total-block">
+                                                <div class="form-order-create__total">1749 ГРН</div>
+                                                <button type='submit'
+                                                    class='form-order-create__btn btn'>Оплатити</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="reviews" id="reviews">
+                <span class="reviews__ellipse"></span>
+                <div class="reviews__container container">
+                    <h2 class="reviews__title">Що кажуть наші клієнти:</h2>
+                    <div class="reviews__body">
+                        <div class="reviews__slider slider-reviews">
+                            <div class="slider-reviews__swiper slider-reviews__swiper_1 swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="slider-reviews__item">
+                                            <div class="slider-reviews__top">
+                                                <div class="slider-reviews__image">
+                                                    <img src="img/reviews/01.png" alt="review-img">
+                                                </div>
+                                                <div class="slider-reviews__name">Костя М.</div>
+                                            </div>
+                                            <div class="slider-reviews__text">
+                                                Все чітко: сервіс, якість, виконання замовлення – на найвищому
+                                                рівні.
+                                            </div>
+                                            <div class="slider-reviews__bottom">
+                                                <button class="slider-reviews__reply">Reply</button>
+                                                <button class="slider-reviews__share">Share</button>
+                                                <button class="slider-reviews__more">...</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-reviews__item">
+                                            <div class="slider-reviews__top">
+                                                <div class="slider-reviews__image">
+                                                    <img src="img/reviews/02.png" alt="review-img">
+                                                </div>
+                                                <div class="slider-reviews__name">Софія В.</div>
+                                            </div>
+                                            <div class="slider-reviews__text">
+                                                Швидко, чітко, кайфово! Іграшка – вогонь 🔥
+                                            </div>
+                                            <div class="slider-reviews__bottom">
+                                                <button class="slider-reviews__reply">Reply</button>
+                                                <button class="slider-reviews__share">Share</button>
+                                                <button class="slider-reviews__more">...</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-reviews__item">
+                                            <div class="slider-reviews__top">
+                                                <div class="slider-reviews__image">
+                                                    <img src="img/reviews/03.jpg" alt="review-img">
+                                                </div>
+                                                <div class="slider-reviews__name">Анна Ф.</div>
+                                            </div>
+                                            <div class="slider-reviews__text">
+                                                Замовила іграшку для мами – вона була у захваті! Все супер, рекомендую!
+                                            </div>
+                                            <div class="slider-reviews__bottom">
+                                                <button class="slider-reviews__reply">Reply</button>
+                                                <button class="slider-reviews__share">Share</button>
+                                                <button class="slider-reviews__more">...</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-reviews__item">
+                                            <div class="slider-reviews__top">
+                                                <div class="slider-reviews__image">
+                                                    <img src="img/reviews/01.png" alt="review-img">
+                                                </div>
+                                                <div class="slider-reviews__name">Костя М.</div>
+                                            </div>
+                                            <div class="slider-reviews__text">
+                                                Все чітко: сервіс, якість, виконання замовлення – на найвищому
+                                                рівні.
+                                            </div>
+                                            <div class="slider-reviews__bottom">
+                                                <button class="slider-reviews__reply">Reply</button>
+                                                <button class="slider-reviews__share">Share</button>
+                                                <button class="slider-reviews__more">...</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-reviews__item">
+                                            <div class="slider-reviews__top">
+                                                <div class="slider-reviews__image">
+                                                    <img src="img/reviews/02.png" alt="review-img">
+                                                </div>
+                                                <div class="slider-reviews__name">Софія В.</div>
+                                            </div>
+                                            <div class="slider-reviews__text">
+                                                Швидко, чітко, кайфово! Іграшка – вогонь 🔥
+                                            </div>
+                                            <div class="slider-reviews__bottom">
+                                                <button class="slider-reviews__reply">Reply</button>
+                                                <button class="slider-reviews__share">Share</button>
+                                                <button class="slider-reviews__more">...</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-reviews__item">
+                                            <div class="slider-reviews__top">
+                                                <div class="slider-reviews__image">
+                                                    <img src="img/reviews/03.jpg" alt="review-img">
+                                                </div>
+                                                <div class="slider-reviews__name">Анна Ф.</div>
+                                            </div>
+                                            <div class="slider-reviews__text">
+                                                Замовила іграшку для мами – вона була у захваті! Все супер, рекомендую!
+                                            </div>
+                                            <div class="slider-reviews__bottom">
+                                                <button class="slider-reviews__reply">Reply</button>
+                                                <button class="slider-reviews__share">Share</button>
+                                                <button class="slider-reviews__more">...</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-reviews__item">
+                                            <div class="slider-reviews__top">
+                                                <div class="slider-reviews__image">
+                                                    <img src="img/reviews/01.png" alt="review-img">
+                                                </div>
+                                                <div class="slider-reviews__name">Костя М.</div>
+                                            </div>
+                                            <div class="slider-reviews__text">
+                                                Все чітко: сервіс, якість, виконання замовлення – на найвищому
+                                                рівні.
+                                            </div>
+                                            <div class="slider-reviews__bottom">
+                                                <button class="slider-reviews__reply">Reply</button>
+                                                <button class="slider-reviews__share">Share</button>
+                                                <button class="slider-reviews__more">...</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-reviews__item">
+                                            <div class="slider-reviews__top">
+                                                <div class="slider-reviews__image">
+                                                    <img src="img/reviews/02.png" alt="review-img">
+                                                </div>
+                                                <div class="slider-reviews__name">Софія В.</div>
+                                            </div>
+                                            <div class="slider-reviews__text">
+                                                Швидко, чітко, кайфово! Іграшка – вогонь 🔥
+                                            </div>
+                                            <div class="slider-reviews__bottom">
+                                                <button class="slider-reviews__reply">Reply</button>
+                                                <button class="slider-reviews__share">Share</button>
+                                                <button class="slider-reviews__more">...</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-reviews__item">
+                                            <div class="slider-reviews__top">
+                                                <div class="slider-reviews__image">
+                                                    <img src="img/reviews/03.jpg" alt="review-img">
+                                                </div>
+                                                <div class="slider-reviews__name">Анна Ф.</div>
+                                            </div>
+                                            <div class="slider-reviews__text">
+                                                Замовила іграшку для мами – вона була у захваті! Все супер, рекомендую!
+                                            </div>
+                                            <div class="slider-reviews__bottom">
+                                                <button class="slider-reviews__reply">Reply</button>
+                                                <button class="slider-reviews__share">Share</button>
+                                                <button class="slider-reviews__more">...</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__slider slider-reviews">
+                            <div class="slider-reviews__swiper slider-reviews__swiper_2 swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="slider-reviews__item">
+                                            <div class="slider-reviews__top">
+                                                <div class="slider-reviews__image">
+                                                    <img src="img/reviews/04.jpg" alt="review-img">
+                                                </div>
+                                                <div class="slider-reviews__name">Andriy S.</div>
+                                            </div>
+                                            <div class="slider-reviews__text">
+                                                Дуже задоволений співпрацею. Враження – 10/10
+                                            </div>
+                                            <div class="slider-reviews__bottom">
+                                                <button class="slider-reviews__reply">Reply</button>
+                                                <button class="slider-reviews__share">Share</button>
+                                                <button class="slider-reviews__more">...</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-reviews__item">
+                                            <div class="slider-reviews__top">
+                                                <div class="slider-reviews__image">
+                                                    <img src="img/reviews/03.jpg" alt="review-img">
+                                                </div>
+                                                <div class="slider-reviews__name">Женя К.</div>
+                                            </div>
+                                            <div class="slider-reviews__text">
+                                                Вдячний команді!
+                                            </div>
+                                            <div class="slider-reviews__bottom">
+                                                <button class="slider-reviews__reply">Reply</button>
+                                                <button class="slider-reviews__share">Share</button>
+                                                <button class="slider-reviews__more">...</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-reviews__item">
+                                            <div class="slider-reviews__top">
+                                                <div class="slider-reviews__image">
+                                                    <img src="img/reviews/05.jpg" alt="review-img">
+                                                </div>
+                                                <div class="slider-reviews__name">Марина А.</div>
+                                            </div>
+                                            <div class="slider-reviews__text">
+                                                Реально лайк 👍
+                                            </div>
+                                            <div class="slider-reviews__bottom">
+                                                <button class="slider-reviews__reply">Reply</button>
+                                                <button class="slider-reviews__share">Share</button>
+                                                <button class="slider-reviews__more">...</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-reviews__item">
+                                            <div class="slider-reviews__top">
+                                                <div class="slider-reviews__image">
+                                                    <img src="img/reviews/04.jpg" alt="review-img">
+                                                </div>
+                                                <div class="slider-reviews__name">Andriy S.</div>
+                                            </div>
+                                            <div class="slider-reviews__text">
+                                                Дуже задоволений співпрацею. Враження – 10/10
+                                            </div>
+                                            <div class="slider-reviews__bottom">
+                                                <button class="slider-reviews__reply">Reply</button>
+                                                <button class="slider-reviews__share">Share</button>
+                                                <button class="slider-reviews__more">...</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-reviews__item">
+                                            <div class="slider-reviews__top">
+                                                <div class="slider-reviews__image">
+                                                    <img src="img/reviews/03.jpg" alt="review-img">
+                                                </div>
+                                                <div class="slider-reviews__name">Женя К.</div>
+                                            </div>
+                                            <div class="slider-reviews__text">
+                                                Вдячний команді!
+                                            </div>
+                                            <div class="slider-reviews__bottom">
+                                                <button class="slider-reviews__reply">Reply</button>
+                                                <button class="slider-reviews__share">Share</button>
+                                                <button class="slider-reviews__more">...</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-reviews__item">
+                                            <div class="slider-reviews__top">
+                                                <div class="slider-reviews__image">
+                                                    <img src="img/reviews/05.jpg" alt="review-img">
+                                                </div>
+                                                <div class="slider-reviews__name">Марина А.</div>
+                                            </div>
+                                            <div class="slider-reviews__text">
+                                                Реально лайк 👍
+                                            </div>
+                                            <div class="slider-reviews__bottom">
+                                                <button class="slider-reviews__reply">Reply</button>
+                                                <button class="slider-reviews__share">Share</button>
+                                                <button class="slider-reviews__more">...</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-reviews__item">
+                                            <div class="slider-reviews__top">
+                                                <div class="slider-reviews__image">
+                                                    <img src="img/reviews/04.jpg" alt="review-img">
+                                                </div>
+                                                <div class="slider-reviews__name">Andriy S.</div>
+                                            </div>
+                                            <div class="slider-reviews__text">
+                                                Дуже задоволений співпрацею. Враження – 10/10
+                                            </div>
+                                            <div class="slider-reviews__bottom">
+                                                <button class="slider-reviews__reply">Reply</button>
+                                                <button class="slider-reviews__share">Share</button>
+                                                <button class="slider-reviews__more">...</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-reviews__item">
+                                            <div class="slider-reviews__top">
+                                                <div class="slider-reviews__image">
+                                                    <img src="img/reviews/03.jpg" alt="review-img">
+                                                </div>
+                                                <div class="slider-reviews__name">Женя К.</div>
+                                            </div>
+                                            <div class="slider-reviews__text">
+                                                Вдячний команді!
+                                            </div>
+                                            <div class="slider-reviews__bottom">
+                                                <button class="slider-reviews__reply">Reply</button>
+                                                <button class="slider-reviews__share">Share</button>
+                                                <button class="slider-reviews__more">...</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-reviews__item">
+                                            <div class="slider-reviews__top">
+                                                <div class="slider-reviews__image">
+                                                    <img src="img/reviews/05.jpg" alt="review-img">
+                                                </div>
+                                                <div class="slider-reviews__name">Марина А.</div>
+                                            </div>
+                                            <div class="slider-reviews__text">
+                                                Реально лайк 👍
+                                            </div>
+                                            <div class="slider-reviews__bottom">
+                                                <button class="slider-reviews__reply">Reply</button>
+                                                <button class="slider-reviews__share">Share</button>
+                                                <button class="slider-reviews__more">...</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__slider slider-reviews">
+                            <div class="slider-reviews__swiper slider-reviews__swiper_3 swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="slider-reviews__item">
+                                            <div class="slider-reviews__top">
+                                                <div class="slider-reviews__image">
+                                                    <img src="img/reviews/06.jpg" alt="review-img">
+                                                </div>
+                                                <div class="slider-reviews__name">Діма Ш.</div>
+                                            </div>
+                                            <div class="slider-reviews__text">
+                                                Дуже приємно, що можна створити щось таке особисте і унікальне
+                                            </div>
+                                            <div class="slider-reviews__bottom">
+                                                <button class="slider-reviews__reply">Reply</button>
+                                                <button class="slider-reviews__share">Share</button>
+                                                <button class="slider-reviews__more">...</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-reviews__item">
+                                            <div class="slider-reviews__top">
+                                                <div class="slider-reviews__image">
+                                                    <img src="img/reviews/03.jpg" alt="review-img">
+                                                </div>
+                                                <div class="slider-reviews__name">Марк К.</div>
+                                            </div>
+                                            <div class="slider-reviews__text">
+                                                Це ідеальний подарунок для тих, у кого вже все є. Дуже оригінально!
+                                            </div>
+                                            <div class="slider-reviews__bottom">
+                                                <button class="slider-reviews__reply">Reply</button>
+                                                <button class="slider-reviews__share">Share</button>
+                                                <button class="slider-reviews__more">...</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-reviews__item">
+                                            <div class="slider-reviews__top">
+                                                <div class="slider-reviews__image">
+                                                    <img src="img/reviews/07.jpg" alt="review-img">
+                                                </div>
+                                                <div class="slider-reviews__name">Карина А.</div>
+                                            </div>
+                                            <div class="slider-reviews__text">
+                                                Діти в захваті від своїх іграшок, будемо замовляти ще!
+                                            </div>
+                                            <div class="slider-reviews__bottom">
+                                                <button class="slider-reviews__reply">Reply</button>
+                                                <button class="slider-reviews__share">Share</button>
+                                                <button class="slider-reviews__more">...</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-reviews__item">
+                                            <div class="slider-reviews__top">
+                                                <div class="slider-reviews__image">
+                                                    <img src="img/reviews/06.jpg" alt="review-img">
+                                                </div>
+                                                <div class="slider-reviews__name">Діма Ш.</div>
+                                            </div>
+                                            <div class="slider-reviews__text">
+                                                Дуже приємно, що можна створити щось таке особисте і унікальне
+                                            </div>
+                                            <div class="slider-reviews__bottom">
+                                                <button class="slider-reviews__reply">Reply</button>
+                                                <button class="slider-reviews__share">Share</button>
+                                                <button class="slider-reviews__more">...</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-reviews__item">
+                                            <div class="slider-reviews__top">
+                                                <div class="slider-reviews__image">
+                                                    <img src="img/reviews/03.jpg" alt="review-img">
+                                                </div>
+                                                <div class="slider-reviews__name">Марк К.</div>
+                                            </div>
+                                            <div class="slider-reviews__text">
+                                                Це ідеальний подарунок для тих, у кого вже все є. Дуже оригінально!
+                                            </div>
+                                            <div class="slider-reviews__bottom">
+                                                <button class="slider-reviews__reply">Reply</button>
+                                                <button class="slider-reviews__share">Share</button>
+                                                <button class="slider-reviews__more">...</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-reviews__item">
+                                            <div class="slider-reviews__top">
+                                                <div class="slider-reviews__image">
+                                                    <img src="img/reviews/07.jpg" alt="review-img">
+                                                </div>
+                                                <div class="slider-reviews__name">Карина А.</div>
+                                            </div>
+                                            <div class="slider-reviews__text">
+                                                Діти в захваті від своїх іграшок, будемо замовляти ще!
+                                            </div>
+                                            <div class="slider-reviews__bottom">
+                                                <button class="slider-reviews__reply">Reply</button>
+                                                <button class="slider-reviews__share">Share</button>
+                                                <button class="slider-reviews__more">...</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-reviews__item">
+                                            <div class="slider-reviews__top">
+                                                <div class="slider-reviews__image">
+                                                    <img src="img/reviews/06.jpg" alt="review-img">
+                                                </div>
+                                                <div class="slider-reviews__name">Діма Ш.</div>
+                                            </div>
+                                            <div class="slider-reviews__text">
+                                                Дуже приємно, що можна створити щось таке особисте і унікальне
+                                            </div>
+                                            <div class="slider-reviews__bottom">
+                                                <button class="slider-reviews__reply">Reply</button>
+                                                <button class="slider-reviews__share">Share</button>
+                                                <button class="slider-reviews__more">...</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-reviews__item">
+                                            <div class="slider-reviews__top">
+                                                <div class="slider-reviews__image">
+                                                    <img src="img/reviews/03.jpg" alt="review-img">
+                                                </div>
+                                                <div class="slider-reviews__name">Марк К.</div>
+                                            </div>
+                                            <div class="slider-reviews__text">
+                                                Це ідеальний подарунок для тих, у кого вже все є. Дуже оригінально!
+                                            </div>
+                                            <div class="slider-reviews__bottom">
+                                                <button class="slider-reviews__reply">Reply</button>
+                                                <button class="slider-reviews__share">Share</button>
+                                                <button class="slider-reviews__more">...</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-reviews__item">
+                                            <div class="slider-reviews__top">
+                                                <div class="slider-reviews__image">
+                                                    <img src="img/reviews/07.jpg" alt="review-img">
+                                                </div>
+                                                <div class="slider-reviews__name">Карина А.</div>
+                                            </div>
+                                            <div class="slider-reviews__text">
+                                                Діти в захваті від своїх іграшок, будемо замовляти ще!
+                                            </div>
+                                            <div class="slider-reviews__bottom">
+                                                <button class="slider-reviews__reply">Reply</button>
+                                                <button class="slider-reviews__share">Share</button>
+                                                <button class="slider-reviews__more">...</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="works" id="works">
+                <div class="works__container container">
+                    <div class="works__top">
+                        <h2 class="works__title">
+                            Вони вже<br> отримали свої<br> іграшки:
+                            <span class="tag">#be-toy</span>
+                        </h2>
+                    </div>
+                    <div class="works__body">
+                        <div class="works__slider slider-works">
+                            <div class="slider-works__swiper swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="slider-works__item">
+                                            <div class="slider-works__info">
+                                                <span class="slider-works__icon slider-works__icon_image">
+                                                    <img src="img/works/image.svg" alt="work-icon">
+                                                </span>
+                                                <span class="slider-works__tag">@dima.fast</span>
+                                            </div>
+                                            <div class="slider-works__content">
+                                                <div class="slider-works__media slider-works__media_main">
+                                                    <a href="img/works/01.jpg" data-fancybox="work-1">
+                                                        <img src="img/works/01.jpg" alt="work-img">
+                                                    </a>
+                                                </div>
+                                                <div class="slider-works__media">
+                                                    <a href="img/works/01.jpg" data-fancybox="work-1">
+                                                        <img src="img/works/01.jpg" alt="work-img">
+                                                    </a>
+                                                </div>
+                                                <div class="slider-works__media">
+                                                    <a href="img/works/01.jpg" data-fancybox="work-1">
+                                                        <img src="img/works/01.jpg" alt="work-img">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-works__item">
+                                            <div class="slider-works__info">
+                                                <span class="slider-works__icon slider-works__icon_video">
+                                                    <img src="img/works/video.svg" alt="work-icon">
+                                                </span>
+                                                <span class="slider-works__tag">@alina.mood</span>
+                                            </div>
+                                            <div class="slider-works__content">
+                                                <div class="slider-works__media slider-works__media_main">
+                                                    <a href="img/works/02.jpg" data-fancybox="work-2">
+                                                        <img src="img/works/02.jpg" alt="work-img">
+                                                    </a>
+                                                </div>
+                                                <div class="slider-works__media">
+                                                    <a href="img/works/02.jpg" data-fancybox="work-2">
+                                                        <img src="img/works/02.jpg" alt="work-img">
+                                                    </a>
+                                                </div>
+                                                <div class="slider-works__media">
+                                                    <a href="img/works/02.jpg" data-fancybox="work-2">
+                                                        <img src="img/works/02.jpg" alt="work-img">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-works__item">
+                                            <div class="slider-works__info">
+                                                <span class="slider-works__icon slider-works__icon_image">
+                                                    <img src="img/works/image.svg" alt="work-icon">
+                                                </span>
+                                                <span class="slider-works__tag">@max.power</span>
+                                            </div>
+                                            <div class="slider-works__content">
+                                                <div class="slider-works__media slider-works__media_main">
+                                                    <a href="img/works/03.jpg" data-fancybox="work-3">
+                                                        <img src="img/works/03.jpg" alt="work-img">
+                                                    </a>
+                                                </div>
+                                                <div class="slider-works__media">
+                                                    <a href="img/works/03.jpg" data-fancybox="work-3">
+                                                        <img src="img/works/03.jpg" alt="work-img">
+                                                    </a>
+                                                </div>
+                                                <div class="slider-works__media">
+                                                    <a href="img/works/03.jpg" data-fancybox="work-3">
+                                                        <img src="img/works/03.jpg" alt="work-img">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-works__item">
+                                            <div class="slider-works__info">
+                                                <span class="slider-works__icon slider-works__icon_image">
+                                                    <img src="img/works/image.svg" alt="work-icon">
+                                                </span>
+                                                <span class="slider-works__tag">@daria.dreams</span>
+                                            </div>
+                                            <div class="slider-works__content">
+                                                <div class="slider-works__media slider-works__media_main">
+                                                    <a href="img/works/04.jpg" data-fancybox="work-4">
+                                                        <img src="img/works/04.jpg" alt="work-img">
+                                                    </a>
+                                                </div>
+                                                <div class="slider-works__media">
+                                                    <a href="img/works/04.jpg" data-fancybox="work-4">
+                                                        <img src="img/works/04.jpg" alt="work-img">
+                                                    </a>
+                                                </div>
+                                                <div class="slider-works__media">
+                                                    <a href="img/works/04.jpg" data-fancybox="work-4">
+                                                        <img src="img/works/04.jpg" alt="work-img">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-works__item">
+                                            <div class="slider-works__info">
+                                                <span class="slider-works__icon slider-works__icon_image">
+                                                    <img src="img/works/image.svg" alt="work-icon">
+                                                </span>
+                                                <span class="slider-works__tag">@dima.fast</span>
+                                            </div>
+                                            <div class="slider-works__content">
+                                                <div class="slider-works__media slider-works__media_main">
+                                                    <a href="img/works/01.jpg" data-fancybox="work-5">
+                                                        <img src="img/works/01.jpg" alt="work-img">
+                                                    </a>
+                                                </div>
+                                                <div class="slider-works__media">
+                                                    <a href="img/works/01.jpg" data-fancybox="work-5">
+                                                        <img src="img/works/01.jpg" alt="work-img">
+                                                    </a>
+                                                </div>
+                                                <div class="slider-works__media">
+                                                    <a href="img/works/01.jpg" data-fancybox="work-5">
+                                                        <img src="img/works/01.jpg" alt="work-img">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-works__item">
+                                            <div class="slider-works__info">
+                                                <span class="slider-works__icon slider-works__icon_video">
+                                                    <img src="img/works/video.svg" alt="work-icon">
+                                                </span>
+                                                <span class="slider-works__tag">@alina.mood</span>
+                                            </div>
+                                            <div class="slider-works__content">
+                                                <div class="slider-works__media slider-works__media_main">
+                                                    <a href="img/works/02.jpg" data-fancybox="work-6">
+                                                        <img src="img/works/02.jpg" alt="work-img">
+                                                    </a>
+                                                </div>
+                                                <div class="slider-works__media">
+                                                    <a href="img/works/02.jpg" data-fancybox="work-6">
+                                                        <img src="img/works/02.jpg" alt="work-img">
+                                                    </a>
+                                                </div>
+                                                <div class="slider-works__media">
+                                                    <a href="img/works/02.jpg" data-fancybox="work-6">
+                                                        <img src="img/works/02.jpg" alt="work-img">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-works__item">
+                                            <div class="slider-works__info">
+                                                <span class="slider-works__icon slider-works__icon_image">
+                                                    <img src="img/works/image.svg" alt="work-icon">
+                                                </span>
+                                                <span class="slider-works__tag">@max.power</span>
+                                            </div>
+                                            <div class="slider-works__content">
+                                                <div class="slider-works__media slider-works__media_main">
+                                                    <a href="img/works/03.jpg" data-fancybox="work-7">
+                                                        <img src="img/works/03.jpg" alt="work-img">
+                                                    </a>
+                                                </div>
+                                                <div class="slider-works__media">
+                                                    <a href="img/works/03.jpg" data-fancybox="work-7">
+                                                        <img src="img/works/03.jpg" alt="work-img">
+                                                    </a>
+                                                </div>
+                                                <div class="slider-works__media">
+                                                    <a href="img/works/03.jpg" data-fancybox="work-7">
+                                                        <img src="img/works/03.jpg" alt="work-img">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-works__item">
+                                            <div class="slider-works__info">
+                                                <span class="slider-works__icon slider-works__icon_image">
+                                                    <img src="img/works/image.svg" alt="work-icon">
+                                                </span>
+                                                <span class="slider-works__tag">@daria.dreams</span>
+                                            </div>
+                                            <div class="slider-works__content">
+                                                <div class="slider-works__media slider-works__media_main">
+                                                    <a href="img/works/04.jpg" data-fancybox="work-8">
+                                                        <img src="img/works/04.jpg" alt="work-img">
+                                                    </a>
+                                                </div>
+                                                <div class="slider-works__media">
+                                                    <a href="img/works/04.jpg" data-fancybox="work-8">
+                                                        <img src="img/works/04.jpg" alt="work-img">
+                                                    </a>
+                                                </div>
+                                                <div class="slider-works__media">
+                                                    <a href="img/works/04.jpg" data-fancybox="work-8">
+                                                        <img src="img/works/04.jpg" alt="work-img">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-works__navigation navigation">
+                                <a href="" class="works__btn btn link-scroll" data-scroll="create">Хочу таку ж</a>
+                                <div class="navigation__btns">
+                                    <button class="navigation__btn navigation__btn_prev slider-works__btn_prev">
+                                        <svg>
+                                            <use xlink:href="#arrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button class="navigation__btn navigation__btn_next slider-works__btn_next">
+                                        <svg>
+                                            <use xlink:href="#arrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer" id="footer">
+    <span class="footer__ellipse"></span>
+    <div class="footer__container container">
+        <div class="footer__body">
+            <div class="footer__row">
+                <div class="footer__column footer__column_logo">
+                    <a href="" class="footer__logo">
+                        <img src="img/logo.svg" alt="logo">
+                    </a>
+                    <div class="footer__copyright" data-da="footer__column_links, -1, 800">© 2025</div>
+                </div>
+                <div class="footer__column footer__column_links">
+                    <nav class="footer__menu menu-footer">
+                        <ul class="menu-footer__list">
+                            <li class="menu-footer__item">
+                                <a href="" class="menu-footer__link">Політика конфіденційності</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="" class="menu-footer__link">Умови використання сайту</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="footer__languages languages-footer">
+                        <ul class="languages-footer__list">
+                            <li class="languages-footer__item">
+                                <a href="index.html" class="languages-footer__link active">UA</a>
+                            </li>
+                            <li class="languages-footer__item">
+                                <a href="index_eu.html" class="languages-footer__link">EN</a>
+                            </li>
+                            <li class="languages-footer__item">
+                                <a href="index_ru.html" class="languages-footer__link">RU</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__column footer__column_socials">
+                    <div class="footer__socials socials-footer">
+                        <ul class="socials-footer__list">
+                            <li class="socials-footer__item">
+                                <a href="" class="socials-footer__link">
+                                    <span class="socials-footer__link_text">Instagram</span>
+                                    <span class="socials-footer__link_icon">
+                                        <svg>
+                                            <use xlink:href="#arrow-link"></use>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="socials-footer__item">
+                                <a href="" class="socials-footer__link">
+                                    <span class="socials-footer__link_text">TikTok</span>
+                                    <span class="socials-footer__link_icon">
+                                        <svg>
+                                            <use xlink:href="#arrow-link"></use>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="" class="footer__link footer__link_email">
+                        <span class="footer__link-icon">
+                            <img src="img/icons/email.png" alt="email">
+                        </span>
+                        <span class="footer__link-text">
+                            support@be_toy.com
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://pay.fondy.eu/latest/checkout.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>
